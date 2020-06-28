@@ -1,2 +1,2 @@
 # SpringMicroblog
-That's my Spring Microblog project. Creating this to learn Spring, Hibernate, Bootstrap.
+That's my Spring Microblog project. Creating this to learn Spring, Maven, Hibernate, Bootstrap.
