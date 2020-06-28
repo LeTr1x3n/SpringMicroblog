@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Created base app from Spring templates #2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/notatwitter" vcs="Git" />
   </component>
 </project>
