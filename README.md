@@ -1,4 +1,4 @@
-![StickerWorld](https://i.ibb.co/JcVLdNB/Sticker-World-logo.png)
+![StickerWorld](https://i.ibb.co/4mCScSy/Sticker-Worldlogo.png)
 ========
 
 
