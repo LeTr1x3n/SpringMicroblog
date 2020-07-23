@@ -4,3 +4,5 @@ target/
 .idea/
 *.png
 *.properties
+scripts/
+out/

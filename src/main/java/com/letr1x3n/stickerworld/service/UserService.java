@@ -4,6 +4,7 @@ import com.letr1x3n.stickerworld.domain.Role;
 import com.letr1x3n.stickerworld.domain.User;
 import com.letr1x3n.stickerworld.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -24,6 +25,9 @@ public class UserService implements UserDetailsService {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+
+    @Value("${hostnameserver}")
+    private String hostnameserver;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -58,8 +62,9 @@ public class UserService implements UserDetailsService {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
                     "Здравствуй, %s! \n" +
-                            "Добро пожаловать в StickerWorld! Для активации Вашего аккаунта перейдите по ссылке: http://localhost:8080/activate/%s",
+                            "Добро пожаловать в StickerWorld! Для активации Вашего аккаунта перейдите по ссылке: http://%s/activate/%s",
                     user.getUsername(),
+                    hostnameserver,
                     user.getActivationCode()
             );
 
